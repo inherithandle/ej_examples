@@ -49,7 +49,8 @@ public class Item25Test {
 		Integer[] hi = ints.<Integer>toArray(newInts);
 		String[] hi2 = new String[10];
 		// 절대 타입 미스매치가 날 수 없음.
-		ints.toArray(hi2); // 
+		
+		ints.toArray(hi); // 
 		
 	}
 	
@@ -97,14 +98,10 @@ public class Item25Test {
 		Double realNumber = ((Integer)objects[0]).doubleValue();
 	}
 	
-	@Test
+	@Test(expected=ArrayStoreException.class)
 	public void arraystoreexceptiontest() {
-//		Object[] objects = new Integer[10];
-//		objects[0] = new String("AbcD");
-		
 		Object[] objects = new Integer[10];
-		
-		objects[0] = "hi, exception";
+		objects[0] = new String("Hi, exception.");				// ArrayStoreException
 	}
 	
 	@Test
