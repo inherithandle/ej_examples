@@ -13,7 +13,7 @@ public class Things {
 	
 	@Test
 	public void arrayOfGenricsType() {
-		Object[] = new List<String>[10];
+//		Object[] = new List<String>[10];
 	}
 	
 }
