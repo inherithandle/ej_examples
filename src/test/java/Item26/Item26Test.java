@@ -17,5 +17,6 @@ public class Item26Test {
 		String string 	= 	(String)obj;
 		Integer integer =	(Integer)obj;	
 		
+		// 캐스팅할때 검사해서 불일치 익셉션...
 	}
 }

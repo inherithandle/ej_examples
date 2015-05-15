@@ -18,7 +18,6 @@ public class Stack<E> {
 		elements[size++] = e;
 	}
 
-
 	public E pop() {
 		if(size ==0)
 			throw new EmptyStackException();

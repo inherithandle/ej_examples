@@ -3,9 +3,7 @@ package Item23;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
 import org.junit.Test;
-
 
 public class Item23Test {
 
@@ -30,6 +28,6 @@ public class Item23Test {
 	}
 	
 	// raw type을 사용하면 어떠한 원소도 넣을 수 있다. 만약 클라이언트가 Set<String>을 인자로 넘겨도
-	// Integer를 Set에 넣을 수 있다. Set<?>을 이용하면 컬렉션에 다른 원소를 넣는것을 막을 수 있다. 
+	// Integer를 Set에 넣을 수 있다. Set<?>을 이용하면 컬렉션에 다른 원소를 넣는것을 막을 수 있다. null은 넣을 수 있다. 
 	
 }
