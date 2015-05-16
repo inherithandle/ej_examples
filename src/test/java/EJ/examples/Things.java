@@ -13,10 +13,16 @@ public class Things {
 		objects[0] = new String("Hi, exception.");				// ArrayStoreException
 	}
 	
-	@Test
+	
 	public void arrayOfGenericsType() {
-		Object[] objects = new List<String>[10];				// type erasure 속성에 의해 List<String>이 지워짐
-		objects[0] = "ABC"; 									
+//		Object[] objects = new List<String>[10];				// type erasure 속성에 의해 List<String>이 지워지고 Object로 대체됨.
+//		objects[0] = "ABC"; 									
 	}
 	
+	@Test(expected=ClassCastException.class)
+	public void typeMismatchException() {
+		Object obj      	=    new String("abc");
+	    String string    	=    (String)obj;               // OK
+	    Integer integer   	=    (Integer)obj;            // TypeCastException.
+	}
 }

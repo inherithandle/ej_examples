@@ -14,14 +14,14 @@ public class Item24Test {
 	@Test
 	public void uncheckedConversion() {
 		Set<String> strings = new HashSet();					// unchecked conversion warning
+		strings.add("hi");
+		strings.add(new Integer());
 	}
 	
 	public Set<String> uncheckedConversionMethod(Set hiHash) {
 	     Set<String> strings = hiHash; 							// unchecked conversion warning
 	     return strings;
 	}
-	
-	
 	
 	@Test
 	public void uncheck_conversion_warning이_나중에_런타임익셉션() {
